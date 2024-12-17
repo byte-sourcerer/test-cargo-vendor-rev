@@ -1,0 +1,9 @@
+[package]
+name = "test-cargo-vendor-rev"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sqlparser = { git = "https://github.com/byte-sourcerer/datafusion-sqlparser-rs", rev = "1cd4f7c", features = [
+    "serde",
+] }
